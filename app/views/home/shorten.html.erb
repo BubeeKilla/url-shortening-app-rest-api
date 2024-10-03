@@ -1,0 +1,12 @@
+<h1>Shorten Your URL</h1>
+<%= form_with url: shorten_path, method: :post, local: true do |form| %>
+  <%= form.label :long_url, "Enter the URL to shorten:" %>
+  <%= form.text_field :long_url, required: true %>
+  <%= form.submit "Shorten" %>
+<% end %>
+
+<% if @short_code %>
+  <p>Your shortened URL code is: <strong><%= @short_code %></strong></p>
+<% elsif @error %>
+  <p><%= @error %></p>
+<% end %>

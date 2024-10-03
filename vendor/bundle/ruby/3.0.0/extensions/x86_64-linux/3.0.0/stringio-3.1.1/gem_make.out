@@ -1,0 +1,15 @@
+current directory: /home/dev/url_shortener_app/vendor/bundle/ruby/3.0.0/gems/stringio-3.1.1/ext/stringio
+/usr/bin/ruby3.0 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20241001-2803-btchio.rb extconf.rb
+creating Makefile
+
+current directory: /home/dev/url_shortener_app/vendor/bundle/ruby/3.0.0/gems/stringio-3.1.1/ext/stringio
+make DESTDIR\= clean
+
+current directory: /home/dev/url_shortener_app/vendor/bundle/ruby/3.0.0/gems/stringio-3.1.1/ext/stringio
+make DESTDIR\=
+compiling stringio.c
+linking shared-object stringio.so
+
+current directory: /home/dev/url_shortener_app/vendor/bundle/ruby/3.0.0/gems/stringio-3.1.1/ext/stringio
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 stringio.so ./.gem.20241001-2803-whg943

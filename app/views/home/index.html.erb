@@ -1,0 +1,17 @@
+<h1>Welcome to the URL Shortener</h1>
+
+<h2>Shorten a URL</h2>
+<%= link_to "Go to Shorten URL", shorten_path, target: "_blank" %>
+
+<h2>Expand a Shortened URL</h2>
+<%= form_with url: expand_path, method: :get, local: true do |form| %>
+  <%= form.label :short_code, "Enter the short code to expand:" %>
+  <%= form.text_field :short_code, required: true %>
+  <%= form.submit "Expand" %>
+<% end %>
+
+<% if @long_url %>
+  <p>The expanded URL is: <strong><%= @long_url %></strong></p>
+<% elsif @error %>
+  <p><%= @error %></p>
+<% end %>
