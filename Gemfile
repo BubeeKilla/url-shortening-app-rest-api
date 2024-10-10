@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "3.0.2"
+ruby "3.3.5"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.4"
@@ -69,4 +69,7 @@ end
 gem 'dotenv-rails', groups: [:development, :test]
 
 gem 'aws-sdk-dynamodb', '~> 1.0'
+
+gem 'httparty'
+
 
