@@ -35,9 +35,9 @@ To run this project locally, follow these steps:
 
   if for some reason you get errors after trying to bundle install, use sudo bundle install, this will give you super user permissions to install all the needed gems and dependencies, and after use sudo chown -R $(whoami) $(gem env gemdir) to restore previous user permission settings. This step with previous user permissions is needed to prevent permission issues in the future by other users.
 
-4. Create AWS DynamoDB Table and Lambda(give roles/permissions to work with DynamoDB):
+4. Create AWS DynamoDB Table:
 
-  do not forget to make changes in the code regarding your DynamoDB and Lambda setup like table name etc.
+  do not forget to make changes in the code regarding your DynamoDB.
 
 5. Set up environment variables:
 
