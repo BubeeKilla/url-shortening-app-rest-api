@@ -43,9 +43,9 @@ To run this project locally, follow these steps:
 
   Create a .env file in the root directory of your project and add your AWS credentials:
 
-  AWS_ACCESS_KEY_ID=your_access_key_id
-  AWS_SECRET_ACCESS_KEY=your_secret_access_key
-  AWS_REGION=your_region
+    - AWS_ACCESS_KEY_ID=your_access_key_id
+    - AWS_SECRET_ACCESS_KEY=your_secret_access_key
+    - AWS_REGION=your_region
 
 6. Start the server:
 
