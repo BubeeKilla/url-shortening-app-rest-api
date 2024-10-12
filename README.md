@@ -33,7 +33,8 @@ To run this project locally, follow these steps:
 
   bundle install
 
-  if for some reason you get errors after trying to bundle install, use sudo bundle install, this will give you super user permissions to install all the needed gems and dependencies, and after use sudo chown -R $(whoami) $(gem env gemdir) to restore previous user permission settings. This step with previous user permissions is needed to prevent permission issues in the future by other users.
+  if for some reason you get errors after trying to bundle install, use sudo bundle install, this will give you super user permissions to install all the needed gems and dependencies, and after use sudo chown -R $(whoami):$(whoami) /usr/local/lib/ruby/gems/3.3.0/gems
+  to restore previous user permission settings, you need to use you path to the gems. This step with user permissions is needed to prevent permission issues in the future by other users, since sudo bundle install will install the gems as root.
 
 4. Create AWS DynamoDB Table, Lambda and API Gateway:
 
