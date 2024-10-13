@@ -1,4 +1,4 @@
-# URL Shortening RRest Api App
+# URL Shortening Rest Api App
 
 URL Shortening Rest API App is a Ruby on Rails application that allows users to shorten URL's, store and acces them on AWS DynamoDB with the help of AWS Lambda and AWS API Gateway. The app provides a simple and intuitive interface for shortening URL's and retreiving all URL's content based on the random generated hex number.
 
@@ -26,8 +26,10 @@ URL Shortening Rest API App is a Ruby on Rails application that allows users to 
   ```bash
   bundle install
   ```
-3. Create AWS DynamoDB Table:
+3. Create AWS DynamoDB Table, AWS Lambda and AWS API Gateway:
 
+  - configure AWS Lambda by giving to it a role/permission of Full Accesss to AWS Dynamo DB that you created.
+  - configure AWS API Gateway to GET and POST with the help of AWS Lambda that you configured with the AWS DynamoDB Table.
   - do not forget to make changes in the code regarding your AWS API Gateway.
 
 4. Set up environment variables:
