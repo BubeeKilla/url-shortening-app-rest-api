@@ -28,7 +28,7 @@ URL Shortening Rest API App is a Ruby on Rails application that allows users to 
   ```
 3. Create AWS DynamoDB Table:
 
-  - do not forget to make changes in the code regarding your AWS Lambda.
+  - do not forget to make changes in the code regarding your AWS API Gateway.
 
 4. Set up environment variables:
    
